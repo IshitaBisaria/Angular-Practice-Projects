@@ -1,0 +1,3 @@
+<h1 *ngIf="t === 0">The number is 0 right now</h1>
+<h1 *ngIf="t !== 0">The Number on the Dice that is Rolled is {{t}}</h1>
+<img *ngIf="t !== 0" src="/assets/images/dice-{{t}}.png" alt="" [ngStyle]="{'max-width.px': 200}">
