@@ -1,0 +1,11 @@
+<img src="assets\images\rockpaperscissors.png" alt="" [ngStyle]="{'max-width.px': 200}">
+<div class="d-flex justify-content-around mt-5">
+  <app-player (n)="calculate($event)"></app-player>
+  <app-player (n)="calculate($event)"></app-player>
+</div>
+<div class="row">
+  <p *ngIf="w === -2">Not yet</p>
+  <p *ngIf="w === -1">Tie</p>
+  <p *ngIf="w !== -1 && w !== -2">Player {{w}} is the Winner!</p>
+  <img *ngIf="w !== -1 && w !== -2" src="assets\images\{{s}}.png" alt="" [ngStyle]="{'max-width.px': 50}">
+</div>

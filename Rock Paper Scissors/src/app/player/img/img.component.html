@@ -1,0 +1,3 @@
+<p *ngIf="t === 0">Play the Game by clicking on the button</p>
+<p *ngIf="t !== 0">{{game[t-1]}}</p>
+<img *ngIf="t !== 0" src="assets\images\{{t}}.png" alt="" [ngStyle]="{'max-width.px': 100}">
